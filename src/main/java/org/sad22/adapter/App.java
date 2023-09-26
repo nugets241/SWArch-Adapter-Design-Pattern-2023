@@ -5,13 +5,12 @@ public class App {
     public static void main(String[] args) {
         System.out.println("This is Adapter DP starter project");
 
-        ExampleClass class1 = new ExampleClass("ORGAN");
-        System.out.println("Class 1 type is " + class1.getPrivateAttribute());
+        WildTurkey wildTurkey = new WildTurkey();
+        System.out.println(wildTurkey.fly());
+        System.out.println(wildTurkey.gobble());
 
-        ExampleClass class2 = new ExampleClass("MACHINE");
-        System.out.println("Class 2 type is " + class2.getPrivateAttribute());
-
-        ExampleClass class3 = new ExampleClass();
-        System.out.println("Class 3 type is " + class3.getPrivateAttribute());
+        MallardDuck mallardDuck = new MallardDuck();
+        System.out.println(mallardDuck.fly());
+        System.out.println(mallardDuck.quack());
     }
 }
